@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Shakti Narayan | B2B Dry Fruit & Spice Trader, Khari Baoli</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#12110e',
+              card: '#1b1915',
+              border: '#2e2a22',
+              gold: '#c99a3e',
+              goldLight: '#dfb45e',
+              whatsapp: '#25D366'
+            }
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-stone-200 font-sans antialiased selection:bg-brand-gold selection:text-black">
+
+  <!-- TOP HEADER / NAV -->
+  <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full border border-brand-gold flex items-center justify-center bg-stone-900">
+          <i data-lucide="sparkles" class="w-5 h-5 text-brand-gold"></i>
+        </div>
+        <div>
+          <span class="block font-serif text-lg tracking-widest text-stone-100 uppercase font-bold leading-tight">Shakti Narayan</span>
+          <span class="block text-[10px] tracking-wider text-brand-gold uppercase">B2B Dry Fruits & Spices</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-stone-300">
+        <a href="#" class="hover:text-brand-gold transition">Home</a>
+        <a href="#about" class="text-brand-gold border-b border-brand-gold pb-1">About Us</a>
+        <a href="#" class="hover:text-brand-gold transition">Products</a>
+        <a href="#why-us" class="hover:text-brand-gold transition">Why Shakti Narayan</a>
+        <a href="#quote" class="hover:text-brand-gold transition">Bulk Enquiry</a>
+        <a href="#footer" class="hover:text-brand-gold transition">Contact</a>
+      </nav>
+
+      <!-- CTA Buttons & Phone -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="tel:+919999494270" class="text-xs text-stone-400 hover:text-stone-200 transition">
+          Call: <span class="font-semibold text-stone-200">+91 99994 94270</span>
+        </a>
+        <a href="https://wa.me/919999494270" target="_blank" class="flex items-center gap-2 bg-brand-whatsapp hover:bg-emerald-600 text-white px-4 py-2 rounded text-sm font-medium transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Us
+        </a>
+        <a href="#quote" class="bg-brand-gold hover:bg-brand-goldLight text-stone-950 font-semibold px-4 py-2 rounded text-sm transition">
+          Request Bulk Quote
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" class="lg:hidden p-2 text-stone-300 hover:text-brand-gold" aria-label="Toggle Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE FULLSCREEN NAVIGATION OVERLAY -->
+  <div id="mobile-menu" class="fixed inset-0 bg-brand-dark z-50 hidden flex-col px-6 py-6 overflow-y-auto">
+    <div class="flex items-center justify-between pb-6 border-b border-brand-border">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full border border-brand-gold flex items-center justify-center">
+          <i data-lucide="sparkles" class="w-4 h-4 text-brand-gold"></i>
+        </div>
+        <span class="font-serif tracking-widest text-white uppercase text-base font-bold">Shakti Narayan</span>
+      </div>
+      <button id="menu-close" class="p-2 text-stone-400 hover:text-white" aria-label="Close Menu">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <nav class="flex flex-col text-2xl font-serif py-6 space-y-5">
+      <a href="#" class="mobile-link text-stone-300 hover:text-brand-gold">Home</a>
+      <a href="#about" class="mobile-link text-brand-gold">About Us</a>
+      <a href="#" class="mobile-link text-stone-300 hover:text-brand-gold">Products</a>
+      <a href="#why-us" class="mobile-link text-stone-300 hover:text-brand-gold">Why Shakti Narayan</a>
+      <a href="#quote" class="mobile-link text-stone-300 hover:text-brand-gold">Bulk Enquiry</a>
+      <a href="#footer" class="mobile-link text-stone-300 hover:text-brand-gold">Contact</a>
+    </nav>
+
+    <div class="mt-auto pt-6 border-t border-brand-border space-y-3">
+      <a href="https://wa.me/919999494270" target="_blank" class="w-full flex items-center justify-center gap-2 bg-brand-whatsapp text-white py-3 rounded font-medium">
+        <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Us
+      </a>
+      <a href="#quote" class="mobile-link w-full block text-center bg-brand-gold text-stone-950 font-bold py-3 rounded">
+        Request Bulk Quote
+      </a>
+      <p class="text-center text-xs text-stone-400 pt-2">Call +91 99994 94270</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="about" class="py-16 md:py-24 border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="flex items-center gap-2 text-xs uppercase tracking-widest text-brand-gold mb-6 font-semibold">
+          <a href="#" class="hover:underline">Home</a>
+          <span>/</span>
+          <span class="text-stone-400">About Us</span>
+        </nav>
+
+        <div class="max-w-4xl">
+          <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl text-stone-100 font-bold leading-tight mb-6">
+            Your reliable B2B sourcing partner for dry fruits and spices from Khari Baoli, Delhi.
+          </h1>
+          <h2 class="text-xl sm:text-2xl text-brand-gold font-medium mb-6">
+            A trading house built for commercial buyers.
+          </h2>
+          <div class="space-y-4 text-stone-300 leading-relaxed text-base sm:text-lg">
+            <p>
+              Shakti Narayan is a Delhi-based B2B wholesaler and trader supplying dry fruits, spices and related food commodities to businesses across India.
+            </p>
+            <p>
+              We work from Khari Baoli — the historic wholesale market of Old Delhi, known across Asia for spices, dry fruits and food commodities. Being here gives our buyers access to a wide supplier network and the range of products this market is known for.
+            </p>
+            <p>
+              Our focus is simple: understand your product, grade, packing and quantity, then share current availability and a requirement-based quotation. We are set up for wholesalers, distributors, retailers, food manufacturers, HoReCa and institutional buyers who purchase regularly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Image Gallery / Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div class="group relative overflow-hidden rounded-lg border border-brand-border aspect-[4/3] bg-brand-card">
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="Spice trader in Khari Baoli" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent"></div>
+            <p class="absolute bottom-3 left-4 text-xs font-medium text-stone-300">Spice trading hub, Khari Baoli</p>
+          </div>
+          <div class="group relative overflow-hidden rounded-lg border border-brand-border aspect-[4/3] bg-brand-card">
+            <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=800&q=80" alt="Whole turmeric and spices" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent"></div>
+            <p class="absolute bottom-3 left-4 text-xs font-medium text-stone-300">Whole turmeric & spices</p>
+          </div>
+          <div class="group relative overflow-hidden rounded-lg border border-brand-border aspect-[4/3] bg-brand-card">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80" alt="Almonds, nuts and dry fruits in bulk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent"></div>
+            <p class="absolute bottom-3 left-4 text-xs font-medium text-stone-300">Bulk dry fruits & nuts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION MATTERS -->
+    <section class="py-16 md:py-24 bg-brand-card/40 border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-10">
+          <div class="max-w-xl">
+            <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">Our Location</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-stone-100 font-bold mt-2 mb-4">
+              From the Heart of Delhi’s Wholesale Spice Market
+            </h2>
+            <p class="text-stone-300 text-base leading-relaxed mb-6">
+              Strategically based in Khari Baoli, Delhi, Shakti Narayan operates from one of India’s most important trading hubs for spices, dry fruits and food commodities.
+            </p>
+            <a href="https://wa.me/919999494270" target="_blank" class="inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-emerald-600 text-white font-medium px-5 py-3 rounded transition">
+              <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Us Your Requirement
+            </a>
+          </div>
+
+          <!-- 6 Grid Perks -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
+            <div class="bg-brand-card p-5 rounded border border-brand-border">
+              <span class="text-brand-gold font-serif text-xl font-bold">01</span>
+              <p class="text-stone-200 font-medium mt-1">Access to a major commodity trading ecosystem</p>
+            </div>
+            <div class="bg-brand-card p-5 rounded border border-brand-border">
+              <span class="text-brand-gold font-serif text-xl font-bold">02</span>
+              <p class="text-stone-200 font-medium mt-1">Strong supplier network across origin regions</p>
+            </div>
+            <div class="bg-brand-card p-5 rounded border border-brand-border">
+              <span class="text-brand-gold font-serif text-xl font-bold">03</span>
+              <p class="text-stone-200 font-medium mt-1">Wide multi-grade product availability</p>
+            </div>
+            <div class="bg-brand-card p-5 rounded border border-brand-border">
+              <span class="text-brand-gold font-serif text-xl font-bold">04</span>
+              <p class="text-stone-200 font-medium mt-1">Efficient sourcing & consignment handling</p>
+            </div>
+            <div class="bg-brand-card p-5 rounded border border-brand-border">
+              <span class="text-brand-gold font-serif text-xl font-bold">05</span>
+              <p class="text-stone-200 font-medium mt-1">Competitive wholesale market rates</p>
+            </div>
+            <div class="bg-brand-card p-5 rounded border border-brand-border">
+              <span class="text-brand-gold font-serif text-xl font-bold">06</span>
+              <p class="text-stone-200 font-medium mt-1">Convenient multi-category B2B procurement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO WE SERVE -->
+    <section class="py-16 md:py-24 border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">Who We Serve</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-stone-100 font-bold mt-2 mb-3">
+          Built for Businesses, Not Just Consumers
+        </h2>
+        <p class="text-stone-400 max-w-2xl mx-auto mb-10">
+          From neighbourhood dry-fruit stores to food manufacturers — if you buy in bulk, we are set up for you.
+        </p>
+
+        <!-- Category Tags -->
+        <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Wholesalers</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Distributors</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Retailers</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Supermarkets</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Dry Fruit Stores</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Spice Shops</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Restaurants & Caterers</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Hotels (HoReCa)</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Bakeries</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Sweet Manufacturers</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Namkeen Manufacturers</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Food Processing Units</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Repackers</span>
+          <span class="bg-brand-card border border-brand-border px-4 py-2 rounded-full text-sm font-medium text-stone-300">Institutional Buyers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOR REGULAR BUYERS -->
+    <section id="why-us" class="py-16 md:py-24 bg-brand-card/30 border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">For Regular Buyers</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-stone-100 font-bold mt-2 mb-3">
+            A Wholesale Partner for Your Regular Requirements
+          </h2>
+          <p class="text-stone-400">
+            This is a sourcing desk for businesses with ongoing procurement of dry fruits and spices — not a retail shop. We work around your product, grade, packing and timelines.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div class="bg-brand-card p-6 rounded-lg border border-brand-border flex flex-col justify-between">
+            <span class="text-2xl font-bold font-serif text-brand-gold">01</span>
+            <div class="mt-6">
+              <h3 class="text-lg font-bold text-stone-100 mb-2">Product Sourcing</h3>
+              <p class="text-sm text-stone-400">Dry fruits and spices sourced through the Khari Baoli trading ecosystem to match your exact specification.</p>
+            </div>
+          </div>
+
+          <div class="bg-brand-card p-6 rounded-lg border border-brand-border flex flex-col justify-between">
+            <span class="text-2xl font-bold font-serif text-brand-gold">02</span>
+            <div class="mt-6">
+              <h3 class="text-lg font-bold text-stone-100 mb-2">Commercial Quantities</h3>
+              <p class="text-sm text-stone-400">Set up specifically for recurring wholesale bulk requirements, not retail packs.</p>
+            </div>
+          </div>
+
+          <div class="bg-brand-card p-6 rounded-lg border border-brand-border flex flex-col justify-between">
+            <span class="text-2xl font-bold font-serif text-brand-gold">03</span>
+            <div class="mt-6">
+              <h3 class="text-lg font-bold text-stone-100 mb-2">Consistent Communication</h3>
+              <p class="text-sm text-stone-400">Direct, prompt updates on market availability, current rates, and dispatch timelines via WhatsApp & Phone.</p>
+            </div>
+          </div>
+
+          <div class="bg-brand-card p-6 rounded-lg border border-brand-border flex flex-col justify-between">
+            <span class="text-2xl font-bold font-serif text-brand-gold">04</span>
+            <div class="mt-6">
+              <h3 class="text-lg font-bold text-stone-100 mb-2">Market Quotations</h3>
+              <p class="text-sm text-stone-400">Every quote transparently reflects your required product grade, packaging, and the market rate on the day.</p>
+            </div>
+          </div>
+
+          <div class="bg-brand-card p-6 rounded-lg border border-brand-border flex flex-col justify-between">
+            <span class="text-2xl font-bold font-serif text-brand-gold">05</span>
+            <div class="mt-6">
+              <h3 class="text-lg font-bold text-stone-100 mb-2">Long-term B2B Trust</h3>
+              <p class="text-sm text-stone-400">We aim to be the dependable supplier you call again for every periodic cycle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BULK ENQUIRY FORM SECTION -->
+    <section id="quote" class="py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">Bulk Enquiry</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-stone-100 font-bold mt-2">Looking for Dry Fruits or Spices in Bulk?</h2>
+          <p class="text-stone-400 mt-2">Send us your requirement and our team will get back to you with current availability and a wholesale quotation.</p>
+        </div>
+
+        <div class="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-10 shadow-2xl">
+          <div class="flex items-center justify-between pb-6 mb-8 border-b border-brand-border text-xs text-stone-400 uppercase tracking-wider font-semibold">
+            <span>Wholesale Quotation Request</span>
+            <span class="text-brand-gold">Reply within business hours</span>
+          </div>
+
+          <form action="#" method="POST" class="space-y-6" onsubmit="event.preventDefault(); alert('Enquiry received! We will connect within business hours.');">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-stone-300 font-
